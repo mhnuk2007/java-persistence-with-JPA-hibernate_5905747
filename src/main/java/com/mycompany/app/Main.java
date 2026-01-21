@@ -9,6 +9,9 @@ public class Main {
     EntityManagerFactory emf = Persistence.createEntityManagerFactory("artclass_persistence_unit");
     EntityManager em = emf.createEntityManager();
 
+    em.close();
+    emf.close();
+
 
   }
 }
